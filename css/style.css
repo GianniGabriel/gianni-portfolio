@@ -1,24 +1,194 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --text-primary: #00c894;
+  --text-secondary: #f1faee;
+  --background: #1d3557;
+
+  --medium: 600;
+  --bold: 700;
+  --huge: 900;
+}
 
 * {
-  text-align: center;
   font-family: "Nunito", sans-serif;
   font-weight: 400;
+  color: #c7c8c7;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 body {
-  background-color: #fefefe;
+  background-color: var(--background);
   line-height: 1.4;
+  font-size: 1.5rem;
 }
 
 ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 button:focus {
   outline: none;
   border: none;
+}
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-huge {
+  font-weight: var(--huge);
+}
+
+.text-bold {
+  font-weight: var(--bold);
+}
+
+.text-medium {
+  font-weight: var(--medium);
+}
+
+.info-text {
+  width: 53vw;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  top: 0;
+  background: #1e3960;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  padding: 1.5rem 5rem;
+}
+
+#navbar h1 {
+  font-size: 2.3rem;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  font-weight: var(--bold);
+  color: var(--text-secondary);
+  padding: 0.75rem;
+  margin: 0 0.75rem;
+}
+
+#navbar ul li a:hover {
+  color: var(--text-primary);
+  transition: color 100ms ease-in;
+}
+
+/* Hero */
+#hero .hero-content {
+  width: 60%;
+  margin: 10rem auto 0 auto;
+  height: 70vh;
+}
+
+#hero h1#hero-name {
+  font-size: 5rem;
+  font-weight: var(--medium);
+}
+
+#hero p#hero-text {
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
+#hero a#hero-link {
+  font-size: 2.1875rem;
+  font-weight: var(--medium);
+  color: white;
+  padding: 0.75rem 2rem;
+  background-color: var(--text-primary);
+  border-radius: 15px;
+}
+
+/* All Sections */
+.divider {
+  background-color: var(--text-primary);
+  width: 105px;
+  height: 11px;
+  border-radius: 50px;
+}
+
+.section-header {
+  font-size: 3rem;
+  font-weight: var(--medium);
+  margin: 0.5rem 0 3rem 0;
+}
+
+/* Section: About Me */
+#about .about-content {
+  width: 60%;
+  /* Distance between sections */
+  margin: 7rem auto;
+  height: 80vh;
+}
+
+#about .about-content p.about-text {
+  margin-top: 2rem;
+}
+
+#about .about-content .subtitle {
+  font-size: 1.8rem;
+  font-weight: var(--bold);
+}
+
+#about .about-content #skills-title {
+  margin: 3rem 0 1rem 0;
+}
+
+#about .about-content p.skills-item {
+  white-space: nowrap;
+}
+
+#about .about-content #hobbies-title {
+  margin: 3rem 0 1rem 0;
+}
+
+#about .about-content #hobbies {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#about .about-content #hobbies div#piano span,
+#about .about-content #hobbies div#skiing span {
+  margin: 0 0 1rem 1rem;
+}
+
+#about .about-content #hobbies div#games span,
+#about .about-content #hobbies div#cooking span,
+#about .about-content #hobbies div#weight-lifting span {
+  margin-bottom: 1rem;
+}
+
+#about .about-content #hobbies div {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
