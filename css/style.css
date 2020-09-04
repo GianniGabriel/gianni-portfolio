@@ -66,6 +66,38 @@ button:focus {
   width: 53vw;
 }
 
+.list {
+  margin-top: 0.5rem;
+}
+
+.list li {
+  float: left;
+}
+
+ul.float-left li {
+  margin-right: 1rem;
+}
+
+ul.float-right li {
+  margin-left: 1rem;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
 /* Navbar */
 #navbar {
   display: flex;
@@ -126,6 +158,10 @@ button:focus {
 }
 
 /* All Sections */
+section {
+  padding-top: 6rem;
+}
+
 .divider {
   background-color: var(--text-primary);
   width: 105px;
@@ -142,9 +178,8 @@ button:focus {
 /* Section: About Me */
 #about .about-content {
   width: 60%;
-  /* Distance between sections */
-  margin: 7rem auto;
-  height: 80vh;
+  margin: auto;
+  height: 100vh;
 }
 
 #about .about-content p.about-text {
@@ -191,4 +226,71 @@ button:focus {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+/* Section: Projects */
+#projects .projects-content {
+  width: 60%;
+  margin: auto;
+  height: 100vh;
+}
+
+#projects .projects-content .project-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#projects .projects-content .project-list .project-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 13rem;
+}
+
+#projects .project-list #project-image {
+  width: 500px;
+  height: 312px;
+}
+
+#projects .project-list #project-image:hover {
+  filter: drop-shadow(0px 0px 5px var(--text-secondary));
+}
+
+#projects .project-list a#ten-seconds-link img {
+  width: 241px;
+  height: 453px;
+}
+
+#projects .project-list a#gulp-link,
+#projects .project-list a#ten-seconds-link {
+  margin-right: 2.5rem;
+}
+
+#projects .project-list a#contact-link {
+  margin-left: 2.5rem;
+}
+
+#projects .project-list .project-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#projects .project-list .github-link i:hover {
+  color: var(--text-primary);
+  transform: scale(1.2);
+  transition: transform 100ms ease;
+}
+
+#projects .project-list #gulp-project a.github-link,
+#projects .project-list #ten-seconds-project a.github-link {
+  margin-right: 2.5rem;
+}
+
+#projects .project-list #contact-project a.github-link {
+  margin-left: 2.5rem;
 }
