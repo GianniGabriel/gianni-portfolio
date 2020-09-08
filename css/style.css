@@ -308,6 +308,10 @@ section {
   margin-bottom: 10rem;
 }
 
+#projects .projects-content .project-list #ten-seconds-project {
+  margin-bottom: 4rem;
+}
+
 #projects .project-list #project-image {
   width: 500px;
   height: 312px;
@@ -357,16 +361,16 @@ section {
 #experience .experience-content {
   width: 60%;
   margin: auto;
-  max-height: 100vh;
+  min-height: 100vh;
 }
 
 #experience .experience-list .experience-item {
   margin-bottom: 6rem;
 }
 
-#experience .experience-list .experience-item:last-child {
+/* #experience .experience-list .experience-item:last-child {
   margin-bottom: 9rem;
-}
+} */
 
 #experience .experience-list .experience-item .experience-header {
   display: flex;
