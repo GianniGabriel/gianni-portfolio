@@ -358,6 +358,10 @@ section {
 }
 
 /* Section: Experience */
+#experience {
+  margin-top: 6rem;
+}
+
 #experience .experience-content {
   width: 60%;
   margin: auto;
@@ -367,10 +371,6 @@ section {
 #experience .experience-list .experience-item {
   margin-bottom: 6rem;
 }
-
-/* #experience .experience-list .experience-item:last-child {
-  margin-bottom: 9rem;
-} */
 
 #experience .experience-list .experience-item .experience-header {
   display: flex;
@@ -395,6 +395,10 @@ section {
 }
 
 /* Section: Contact */
+#contact {
+  margin-top: 6rem;
+}
+
 #contact .contact-content {
   width: 60%;
   margin: auto;
