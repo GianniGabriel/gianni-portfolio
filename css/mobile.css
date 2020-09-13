@@ -1,0 +1,116 @@
+/* Project images smaller */
+#projects .project-list #project-image {
+  width: 325px;
+  height: 203px;
+}
+
+#projects .project-list a#ten-seconds-link img {
+  width: 156px;
+  height: 294px;
+}
+
+p {
+  text-align: center;
+}
+
+/* Stack projects vertically */
+@media (max-width: 1000px) {
+  #projects .projects-content .project-list .project-item {
+    flex-direction: column;
+  }
+
+  .section-content {
+    width: 90%;
+  }
+
+  .sidebar-links {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  #hero #hero-intro {
+    text-align: left;
+  }
+
+  #about .about-content .about-text {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  #navbar {
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 1.3rem;
+  }
+
+  #navbar ul li a {
+    margin: 0;
+    padding: 0.5rem;
+  }
+
+  #hero .hero-content #hero-text {
+    text-align: center;
+    width: 100%;
+  }
+  #hero .hero-content,
+  .section-content {
+    margin-bottom: 20rem;
+  }
+  #about .about-content .section-header,
+  #about .about-content .divider {
+    margin-left: 3rem;
+  }
+  #about .about-content .subtitle {
+    text-align: center;
+  }
+
+  #about .about-content #hobbies {
+    flex-direction: column;
+  }
+
+  #about .about-content #hobbies div {
+    margin-bottom: 3rem;
+  }
+
+  #about .about-content p.info-text {
+    width: 100%;
+  }
+
+  #ten-seconds-project > div.project-info > p {
+    width: 100%;
+  }
+
+  #experience .experience-list .experience-item .experience-header {
+    flex-direction: column;
+  }
+
+  #experience .experience-list .experience-item .experience-header h2 {
+    text-align: center;
+  }
+
+  #experience .experience-list .experience-item .experience-date {
+    margin: 0.5rem 0 1rem 0;
+  }
+
+  ul.bullet-list {
+    margin-left: 0;
+  }
+
+  #contact .contact-content #contact-form {
+    padding: 2rem 1rem;
+    width: 275px;
+  }
+}
+
+/* Center all project texts */
+#projects .project-list .project-info h2,
+#projects .project-list .project-info p {
+  text-align: center;
+}
+
+#projects .project-list .project-info ul {
+  float: left;
+}

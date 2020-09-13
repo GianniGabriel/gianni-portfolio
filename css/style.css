@@ -28,6 +28,7 @@ body {
   background-color: var(--background);
   line-height: 1.4;
   font-size: 1.5rem;
+  overflow-x: hidden;
 }
 
 ul {
@@ -234,7 +235,7 @@ section {
 }
 
 /* Section: About Me */
-#about .about-content {
+.about-content {
   width: 60%;
   margin: auto;
   min-height: 100vh;
@@ -251,10 +252,6 @@ section {
 
 #about .about-content #skills-title {
   margin: 3rem 0 1rem 0;
-}
-
-#about .about-content p.skills-item {
-  white-space: nowrap;
 }
 
 #about .about-content #hobbies-title {
