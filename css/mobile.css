@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 /* Project images smaller */
 #projects .project-list #project-image {
   width: 325px;
@@ -15,15 +19,41 @@ p {
 
 /* Stack projects vertically */
 @media (max-width: 1000px) {
+  #projects .project-item div.mobile {
+    display: block;
+  }
+
+  #projects div.non-mobile.project-links {
+    display: none;
+  }
+
   #projects .projects-content .project-list .project-item {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #projects .project-list a#gulp-link,
+  #projects .project-list a#contact-link,
+  #projects .project-list a#ten-seconds-link {
+    margin: auto 0;
+  }
+
+  #projects .project-list #gulp-project a.github-link,
+  #projects .project-list #contact-project a.github-link,
+  #projects .project-list #ten-seconds-project a.github-link {
+    margin: auto 0;
+  }
+
+  #projects .project-list #ten-seconds-project a.github-link {
+    width: 22;
   }
 
   .section-content {
     width: 90%;
   }
 
-  .sidebar-links {
+  .non-mobile.sidebar-links {
     display: none;
   }
 }
@@ -49,6 +79,19 @@ p {
   #navbar ul li a {
     margin: 0;
     padding: 0.5rem;
+  }
+
+  #navbar ul li a#resume {
+    display: none;
+  }
+
+  #navbar #mobile-resume {
+    display: block;
+    color: var(--text-primary);
+    border: 1px solid var(--text-primary);
+    padding: 0.5rem 0.75rem;
+    margin: 1.5rem 0.75rem 0 0.75rem;
+    border-radius: 5px;
   }
 
   #hero .hero-content #hero-text {
@@ -102,6 +145,12 @@ p {
   #contact .contact-content #contact-form {
     padding: 2rem 1rem;
     width: 275px;
+  }
+}
+
+@media (max-width: 370px) {
+  #hero a#hero-link {
+    padding: 0.75rem 1rem;
   }
 }
 

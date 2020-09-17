@@ -32,6 +32,14 @@
           >
         </li>
       </ul>
+      <a
+        class="mobile"
+        id="mobile-resume"
+        href="resume.pdf"
+        target="_blank"
+        rel="noopener"
+        >Resume</a
+      >
     </nav>
 
     <!-- Hero -->
@@ -49,7 +57,7 @@
     </header>
 
     <!-- Sidebar Links -->
-    <div class="sidebar-links">
+    <div class="non-mobile sidebar-links">
       <div class="vertical-divider"></div>
       <a
         target="_blank"
@@ -92,11 +100,13 @@
           <span class="text-primary">Languages | &nbsp;</span>JavaScript
           &nbsp;•&nbsp; HTML/CSS &nbsp;•&nbsp; Java &nbsp;•&nbsp; C++
         </p>
+        <br class="mobile" />
         <p class="skills-item">
           <span class="text-primary">Tools & Frameworks | &nbsp</span>MongoDB
           &nbsp;•&nbsp; Express &nbsp;•&nbsp; React &nbsp;•&nbsp; Node.js
           &nbsp;•&nbsp; Git
         </p>
+        <br class="mobile" />
         <p class="skills-item">
           <span class="text-primary">Applications | &nbsp;</span>Photoshop
           &nbsp;•&nbsp; Adobe XD &nbsp;•&nbsp; Postman
@@ -171,6 +181,27 @@
             </div>
           </div>
           <div class="project-item" id="contact-project">
+            <div class="mobile">
+              <div class="project-links">
+                <a
+                  target="_blank"
+                  id="contact-link"
+                  href="https://contactkeeper-project.herokuapp.com"
+                  rel="noopener"
+                  ><img
+                    id="project-image"
+                    src="img/contact-keeper.png"
+                    alt="Contact Keeper"
+                /></a>
+                <a
+                  target="_blank"
+                  class="github-link"
+                  href="https://github.com/GianniGabriel/contact-keeper"
+                  rel="noopener"
+                  ><i class="fab fa-github fa-2x"></i
+                ></a>
+              </div>
+            </div>
             <div class="project-info">
               <h2 class="text-primary text-medium">Contact Keeper</h2>
               <p>
@@ -189,7 +220,7 @@
                 <li class="text-primary">Postman</li>
               </ul>
             </div>
-            <div class="project-links">
+            <div class="non-mobile project-links">
               <a
                 target="_blank"
                 id="contact-link"
