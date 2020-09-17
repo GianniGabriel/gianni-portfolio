@@ -157,6 +157,17 @@ ul.float-right li {
   transition: color 100ms ease-in;
 }
 
+#navbar ul li a#resume {
+  color: var(--text-primary);
+  border: 1px solid var(--text-primary);
+  border-radius: 5px;
+}
+
+#navbar ul li a#resume:hover {
+  background: rgba(7, 163, 121, 0.1);
+  border: 1px dashed var(--text-primary);
+}
+
 /* Hero */
 #hero .hero-content {
   width: 60%;
