@@ -331,6 +331,11 @@ section {
   height: 312px;
 }
 
+#projects .project-list #project-image.disabled,
+#projects .project-list #project-image.disabled:hover {
+  filter: grayscale(1);
+}
+
 #projects .project-list #project-image:hover {
   filter: drop-shadow(0px 0px 5px var(--text-secondary));
 }
