@@ -350,6 +350,7 @@ section {
   margin-right: 2.5rem;
 }
 
+#projects .project-list a#mathpro-link,
 #projects .project-list a#contact-link {
   margin-left: 2.5rem;
 }
@@ -372,6 +373,7 @@ section {
   margin-right: 2.5rem;
 }
 
+#projects .project-list #math-pro a.github-link,
 #projects .project-list #contact-project a.github-link {
   margin-left: 2.5rem;
 }

@@ -33,12 +33,14 @@ p {
     justify-content: center;
   }
 
+  #projects .project-list a#mathpro-link,
   #projects .project-list a#gulp-link,
   #projects .project-list a#contact-link,
   #projects .project-list a#ten-seconds-link {
     margin: auto 0;
   }
 
+  #projects .project-list #math-pro a.github-link,
   #projects .project-list #gulp-project a.github-link,
   #projects .project-list #contact-project a.github-link,
   #projects .project-list #ten-seconds-project a.github-link {
