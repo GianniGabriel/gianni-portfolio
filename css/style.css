@@ -398,6 +398,13 @@ section {
   align-items: center;
 }
 
+#experience .experience-list .experience-item #moodys-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+  margin-right: 0.5rem;
+}
+
 #experience .experience-list .experience-item #catana-image {
   width: 72px;
   height: 82px;
