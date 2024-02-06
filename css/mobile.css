@@ -118,6 +118,7 @@ p {
 
   #about .about-content #hobbies {
     flex-direction: column;
+    gap: 1rem;
   }
 
   #about .about-content #hobbies div {

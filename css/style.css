@@ -281,15 +281,14 @@ section {
   align-items: center;
 }
 
-#about .about-content #hobbies div#piano span,
-#about .about-content #hobbies div#skiing span {
-  margin: 0 0 1rem 1rem;
-}
-
-#about .about-content #hobbies div#games span,
-#about .about-content #hobbies div#cooking span,
-#about .about-content #hobbies div#hiking span {
-  margin-bottom: 1rem;
+#about .about-content #hobbies div#piano,
+#about .about-content #hobbies div#skiing,
+#about .about-content #hobbies div#games,
+#about .about-content #hobbies div#cooking,
+#about .about-content #hobbies div#hiking {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
 }
 
 #about .about-content #hobbies div {
@@ -298,6 +297,11 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+#about .about-content #hobbies div:hover i {
+  transform: scale(1.2);
+  transition: transform 100ms ease-in-out;
 }
 
 /* Section: Projects */
