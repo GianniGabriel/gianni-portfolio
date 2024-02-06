@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -16,7 +16,7 @@ html {
 }
 
 * {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 400;
   color: #c7c8c7;
   box-sizing: border-box;
@@ -90,7 +90,7 @@ ul.bullet-list li {
 }
 
 ul.bullet-list li::before {
-  content: "►";
+  content: '►';
   color: var(--text-primary);
   margin-right: 1rem;
 }
@@ -288,7 +288,7 @@ section {
 
 #about .about-content #hobbies div#games span,
 #about .about-content #hobbies div#cooking span,
-#about .about-content #hobbies div#weight-lifting span {
+#about .about-content #hobbies div#hiking span {
   margin-bottom: 1rem;
 }
 
@@ -459,7 +459,7 @@ section {
   max-width: 100%;
 }
 
-#contact #contact-form button[type="submit"] {
+#contact #contact-form button[type='submit'] {
   color: #333;
   width: 50%;
   font-size: 1.5rem;
@@ -467,7 +467,7 @@ section {
   margin: auto;
 }
 
-#contact #contact-form button[type="submit"]:hover {
+#contact #contact-form button[type='submit']:hover {
   background-color: var(--text-primary);
   border: 1px solid black;
   border-radius: 2px;
