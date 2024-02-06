@@ -2,6 +2,10 @@ body {
   overflow-x: hidden;
 }
 
+#hero .hero-content {
+  width: 75%;
+}
+
 /* Project images smaller */
 #projects .project-list #project-image {
   width: 325px;
