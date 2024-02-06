@@ -399,6 +399,18 @@ section {
   align-items: center;
 }
 
+#experience .experience-list .experience-item #momento-image {
+  height: 75px;
+  border-radius: 15px;
+  margin-right: 0.5rem;
+}
+
+#experience .experience-list .experience-item #amazon-image {
+  height: 75px;
+  border-radius: 15px;
+  margin-right: 0.5rem;
+}
+
 #experience .experience-list .experience-item #moodys-image {
   width: 80px;
   height: 80px;
